@@ -1,4 +1,6 @@
-# Guía para Iniciar el Contenedor y Trabajar con Scala y Spark en Jupyter
+# Guía para Iniciar el Contenedor Docker con Scala y Spark en Jupyter
+
+![imagen](https://github.com/user-attachments/assets/19f80df9-e7a1-4e84-80bb-35ce124d1f30)
 
 ## Requisitos previos
 1. Tener Docker y Docker Compose instalados
@@ -39,7 +41,8 @@ docker-compose up --build
 Una vez que el contenedor esté en funcionamiento, abre tu navegador y accede a Jupyter Notebook en http://localhost:8888.
 
 El token de acceso o la password la podemos encontrar en los logs.
-![img](assets\docker_spark_logs.jpg)
+
+![docker_spark_logs](https://github.com/user-attachments/assets/c307bbe6-60d9-43dd-b32d-75424bbb3a94)
 
 ## Paso 2: Crear un notebook de Scala
 
@@ -47,7 +50,7 @@ Seleccionar el kernel de Scala:
 
 Al abrir Jupyter, deberías poder ver un botón que dice `New` en la parte superior derecha. Al hacer clic allí, verás una opción llamada `Scala`, que corresponde al kernel de Scala instalado a través de Apache Toree.
 
-![scala](assets\scala_btn.jpg)
+![Scala_button](https://github.com/user-attachments/assets/eced4b8d-7830-4324-8463-32c1bf1f86d9)
 
 Crear un nuevo notebook con el kernel de Scala:
 
@@ -107,14 +110,15 @@ result.show()
 
 **Salida:** El DataFrame resultante contiene las ciudades y géneros con el número de personas y la edad promedio, ordenado por la edad promedio.
 
-![scala](assets\result.jpg)
+![results](https://github.com/user-attachments/assets/ee3c4ae1-5fa3-4228-a2d9-2d8e0a1d6329)
 
 # Ejemplo equivalente con PySpark:
 El equivalente en PySpark sería muy similar, pero con la sintaxis de Python.
 A continuación te muestro cómo hacer lo mismo.
 
 Abrimos un nuevo notebook y seleccionamos el kernel de Python:
-![scala](assets\kernel_python.png)
+
+![kernel_python](https://github.com/user-attachments/assets/bdedd014-3aec-48cf-bdfe-7840ee1ae29a)
 
 Copiaremos y ejecutamos el siguiente código:
 
